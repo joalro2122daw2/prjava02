@@ -1,0 +1,57 @@
+1. Per a clonar el deposit indicat, he obert el terminal i m’he desplaçat fins a la carpeta on volia fer la clonació. Després, he escrit al terminal:
+
+		git clone https://github.com/dacomo2021daw2/prjava02.git
+
+    5. Per a tornar a la branca main del projecte, he escrit a la terminal:
+
+		git checkout main
+
+       Per a comprovar l’estat del projecte, he escrit:
+
+		git status
+
+       Per a mostrar l’historial de la branca main:
+
+		git log
+
+      La diferencia en l’historial de la branca main amb la branca00, és que a la branca main hi ha un commit menys.
+
+    7. Per a tornar a la branca branca00, he escrit a la terminal:
+
+		git checkout branca00
+
+     Al obrir Prjava02.java en Geany, puc veure l’ultima línia afegida, perquè els fitxers en el directori de treball s’han actualitzat als apuntats pel darrer
+     commit d’aquesta branca.
+
+   10. b  Per a fusionar la branca00 amb la branca main, he canviat a la branca main fent:
+
+		git checkout main
+
+    Després, he escrit:
+
+		git merge branca00
+
+   12. Per fer un push del diposit local al diposit remot, he escrit:
+
+		git push origin main
+
+    Després anant al diposit remot a Github, he vist que no més s’actualitzava la branca main, això a estat així perquè el push de la branca main no fa que es
+    pugin la resta de branques del diposit local al remot.
+
+   14. a Per fer un push de la branca branca01 del diposit local al remot, he escrit:
+
+		git push origin branca01
+
+
+				Respostes a les preguntes dels apartats 6, 7, 12c i 14c
+
+    6. No puc veure l’ultima línia afegida al programa perquè al fer checkout de la branca main, el contingut del directori de treball a estat canviat pels
+       fitxer apuntats pel darrer commit en aquesta branca i en aquest fitxer no estava la línia afegida.
+       
+    7. En aquest cas, si que veig la linia afegida, perquè com en el cas anterior, al fer checkout s’ha canviat el contingut del directori de treball pel fitxer
+       apuntats pel darrer commit de la branca branca00.
+       
+   12c En el diposit remot a Github, he vist que no més s’actualitzava la branca main, això a estat així perquè el push de la branca main no fa que es pugin la
+       resta de branques del diposit local al remot.
+
+   14. c La branca branca01 està a dos commits de distancia de la branca main.
